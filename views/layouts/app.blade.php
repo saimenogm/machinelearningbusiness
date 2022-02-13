@@ -8,26 +8,25 @@
     <meta name="keywords" content="au theme template">
         <title>Machine Learning Business</title>
 
-    <link href="css/font-face.css" rel="stylesheet" media="all">
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="{{asset('css/font-face.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('vendor/font-awesome-4.7/css/font-awesome.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('vendor/font-awesome-5/css/fontawesome-all.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('vendor/mdi-font/css/material-design-iconic-font.min.css')}}" rel="stylesheet" media="all">
 
     <!-- Bootstrap CSS-->
-    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="{{asset('vendor/bootstrap-4.1/bootstrap.min.css')}}" rel="stylesheet" media="all">
 
     <!-- Vendor CSS-->
-    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
-    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
-    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
-    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link href="{{asset('vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('vendor/wow/animate.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('vendor/css-hamburgers/hamburgers.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('vendor/slick/slick.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('vendor/select2/select2.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('vendor/perfect-scrollbar/perfect-scrollbar.css')}}" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
-    <link href="css/theme.css" rel="stylesheet" media="all">
-<link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="{{asset('css/theme.css')}}" rel="stylesheet" media="all">
+<link href="{{asset('vendor/animsition/animsition.min.css')}}" rel="stylesheet" media="all">
 </head>
 
 
@@ -39,12 +38,34 @@
                 <div class="header3-wrap">
                     <div class="header__logo">
                         <a href="#">
-                            <img src="images/icon/logo-white.png" alt="CoolAdmin" />
+                            <img src="{{asset('images/icon/logo-white.png')}}" alt="CoolAdmin" />
                         </a>
                     </div>
                     <div class="header__navbar">
                         <ul class="list-unstyled">
-            
+                            <li class="has-sub">
+                                <a class="main-header-link" href="#">
+                                   Machine Learning Tutorials
+                                    <span class="bot-line"></span>
+                                </a>
+                                <ul class="header3-sub-list list-unstyled">
+                                    <li>
+                                        <a href="{{ route('deep_learning') }}">Deep Learning</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('machine_learning') }}">Machine Learning Basics</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('data_visualization') }}">Data Visualization</a>
+                                    </li>
+									     <li>
+                                        <a href="{{ route('computer_vision') }}">Computer Vision</a>
+                                    </li>
+									     <li>
+                                        <a href="{{ route('data_science') }}">Data Science</a>
+                                    </li>
+                                </ul>
+                            </li>
 						
 							<li class="has-sub">
                                 <a class="main-header-link" href="#">
@@ -72,7 +93,7 @@
                             </li>
 							
                             <li class="has-no-sub">
-                                <a class="main-header-link" href="">About Us</a>
+                                <a class="main-header-link" href="{{ route('about_us') }}">About Us</a>
                             </li>
                       
                         </ul>
@@ -164,7 +185,7 @@
                         <div class="account-wrap">
                             <div class="account-item account-item--style2 clearfix js-item-menu">
                                 <div class="image">
-                                    <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                    <img src="{{asset('images/icon/avatar-01.jpg')}}" alt="John Doe" />
                                 </div>
                                 <div class="content">
                                     <a class="js-acc-btn" href="#">john doe</a>
@@ -173,7 +194,7 @@
                                     <div class="info clearfix">
                                         <div class="image">
                                             <a href="#">
-                                                <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                                <img src="{{asset('images/icon/avatar-01.jpg')}}" alt="John Doe" />
                                             </a>
                                         </div>
                                         <div class="content">
@@ -223,7 +244,7 @@
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
                         <a class="logo" href="index.html">
-                            <img src="images/icon/logo-white.png" alt="CoolAdmin" />
+                            <img src="{{asset('images/icon/logo-white.png')}}" alt="CoolAdmin" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -413,7 +434,7 @@
                 <div class="account-wrap">
                     <div class="account-item account-item--style2 clearfix js-item-menu">
                         <div class="image">
-                            <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                            <img src="{{asset('images/icon/avatar-01.jpg')}}" alt="John Doe" />
                         </div>
                         <div class="content">
                             <a class="js-acc-btn" href="#">john doe</a>
@@ -422,7 +443,7 @@
                             <div class="info clearfix">
                                 <div class="image">
                                     <a href="#">
-                                        <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                        <img src="{{asset('images/icon/avatar-01.jpg')}}" alt="John Doe" />
                                     </a>
                                 </div>
                                 <div class="content">
@@ -459,24 +480,10 @@
 
 
 		
-		<div class="page-content--bgf7">
+		
 
-		<br/><br/>
-            <!-- WELCOME-->
-            <section class="welcome p-t-10">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2 class="title-4">Machine Learning Business will teach you how to implement machine learning to practical business applications.
-                            
-                            </h2>
-                            <hr class="line-seprate">
-                        </div>
-                    </div>
-                </div>
-            </section>
+    @yield('content')
 
-    
 	  </div>
 </body>
             <!-- COPYRIGHT-->
@@ -497,25 +504,25 @@
     </div>
 
     <!-- Jquery JS-->
-    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <script src="{{asset('vendor/jquery-3.2.1.min.js')}}"></script>
     <!-- Bootstrap JS-->
-    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
-    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <script src="{{asset('vendor/bootstrap-4.1/popper.min.js')}}"></script>
+    <script src="{{asset('vendor/bootstrap-4.1/bootstrap.min.js')}}"></script>
     <!-- Vendor JS       -->
-    <script src="vendor/slick/slick.min.js">
+    <script src="{{asset('vendor/slick/slick.min.js')}}">
     </script>
-    <script src="vendor/wow/wow.min.js"></script>
-    <script src="vendor/animsition/animsition.min.js"></script>
-    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    <script src="{{asset('vendor/wow/wow.min.js')}}"></script>
+    <script src="{{asset('vendor/animsition/animsition.min.js')}}"></script>
+    <script src="{{asset('vendor/bootstrap-progressbar/bootstrap-progressbar.min.js')}}">
     </script>
-    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
-    <script src="vendor/counter-up/jquery.counterup.min.js">
+    <script src="{{asset('vendor/counter-up/jquery.waypoints.min.js')}}"></script>
+    <script src="{{asset('vendor/counter-up/jquery.counterup.min.js')}}">
     </script>
-    <script src="vendor/circle-progress/circle-progress.min.js"></script>
-    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="{{asset('vendor/circle-progress/circle-progress.min.js')}}"></script>
+    <script src="{{asset('vendor/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
 
     <!-- Main JS-->
-    <script src="js/main.js"></script>
+    <script src="{{asset('js/main.js')}}"></script>
 
 </body>
 

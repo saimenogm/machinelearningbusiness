@@ -35,6 +35,7 @@
 								
 								                  <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
+												 <div style="text-align:center;"> <?php echo e($posts->links()); ?> </div>
                                 </div>
 								 </div>
 							

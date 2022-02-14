@@ -9,13 +9,9 @@ use Illuminate\Support\Facades\DB;
 
 class testing extends Controller
 {
-    //
     public function index_tasks()
     {
-	       $data['posts'] = DB::table ('blogs')
-            ->get ();
-
-			
-        return view('test.posts',$data);
+	       $data['posts'] = DB::table ('blogs')->simplePaginate(5);
+		   return view('test.posts',$data);
     }
 }

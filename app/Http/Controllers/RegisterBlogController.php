@@ -8,6 +8,10 @@ use App\Models\Blogs;
 use App\Models\Blog as Blog;
 use Illuminate\Support\Facades\DB;
 
+namespace App\Console\Commands;
+use Illuminate\Console\Command;
+
+
 class RegisterBlogController extends Controller
 {
     //
@@ -60,6 +64,7 @@ class RegisterBlogController extends Controller
 
 	    public function about(Request $request)
     {
+		Artisan::call('cache:clear');
 			return view('test.about');
     }
 	

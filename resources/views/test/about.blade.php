@@ -9,7 +9,7 @@
                 <div class="container" style="margin-left:13%;">
                     <div class="row" style="width:100%;">
                         <div class="col-md-8" style="background-color:#fff; padding:15pt; ">
-                            <h2 class="title-4" style="text-align:center;">Simon Okbagergis Manna</h2>
+                            <h2 class="title-4" style="text-align:center;">Simon Okbagergis Manna_</h2>
                             <hr class="line-seprate">
 							<div class="post_body">
 							<br/>

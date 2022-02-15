@@ -67,6 +67,7 @@ class RegisterBlogController extends Controller
 	    public function about(Request $request)
     {
 		\Artisan::call('cache:clear');
+		dd("helsjdfkl");
 			return view('test.about');
     }
 	

@@ -8,8 +8,10 @@ use App\Models\Blogs;
 use App\Models\Blog as Blog;
 use Illuminate\Support\Facades\DB;
 
-namespace App\Console\Commands;
-use Illuminate\Console\Command;
+//namespace App\Console\Commands;
+use Illuminate\Console\Events;
+use Illuminate\Foundation\Providers;
+use Illuminate\Support\Facades;
 
 
 class RegisterBlogController extends Controller

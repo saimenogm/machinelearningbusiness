@@ -66,7 +66,7 @@ class RegisterBlogController extends Controller
 
 	    public function about(Request $request)
     {
-		Artisan::call('cache:clear');
+		\Artisan::call('cache:clear');
 			return view('test.about');
     }
 	

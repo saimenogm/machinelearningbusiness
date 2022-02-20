@@ -32,12 +32,12 @@
 							
 
 							<p>Since 2013 Mr. Simon has been working as a senior software developer and systems architect for different companies and organizations.
-He has developed Point of Sale systems (POS), Electronic medical systems, pharmaciutical systems and other projects. Since 2021, Mr. Simon is working as a senior IT consultant and software developer for WHO.
+He has developed Point of Sale systems (POS), Electronic medical systems, pharmaceutical systems and other projects. Since 2021, Mr. Simon is working as a senior IT consultant and software developer for WHO.
 </p>
 
 <br/>
 <p>
-Mr. Simon is multiple national competitions winner including CEO of the second best national startup project winner.
+Mr. Simon is multiple national competitions winner including CEO of the second best national start-up project winner.
 </p>							<br/>
 							
                         </div>
